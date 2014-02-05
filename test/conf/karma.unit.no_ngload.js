@@ -29,6 +29,7 @@ module.exports = function(config) {
 			included : false
 		}, 'dependencies/requirejs/require.js', 'test/unit/lib/main.no_ngload.js' ],
 
+		
 		// files: ['test/conf/testSpec.js'],
 
 		// list of files / patterns to exclude
@@ -58,6 +59,21 @@ module.exports = function(config) {
 
 		// Continuous Integration mode
 		// if true, it capture browsers, run tests and exit
-		singleRun : true
+		singleRun : true,
+
+		reporters : [ 'progress', 'coverage' ],
+
+		preprocessors : {
+			// source files, that you wanna generate coverage for
+			// do not include tests or libraries
+			// (these files will be instrumented by Istanbul)
+			'**/*.js' : [ 'coverage' ]
+		},
+
+		// optionally, configure the reporter
+		coverageReporter : {
+			type : 'html',
+			dir : 'coverage/'
+		}
 	} );
 };

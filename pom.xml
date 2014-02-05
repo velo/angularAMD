@@ -21,7 +21,8 @@
 						<configuration>
 							<browsers>PhantomJS</browsers>
 							<configFile>test/conf/karma.unit.no_ngload.js</configFile>
-							<workingDirectory>${basedir}/</workingDirectory>
+							<workingDirectory>${project.build.directory}/</workingDirectory>
+							<reporters>dots,junit,coverage</reporters>
 						</configuration>
 					</execution>
 				</executions>

@@ -11,3 +11,5 @@ www/css/prettify.css
 .classpath
 .settings
 .project
+/coverage
+/test-results.xml
