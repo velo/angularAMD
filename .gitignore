@@ -1,6 +1,5 @@
 # Ignore Directory created by tools
 node_modules/
-bower_components/
 www/js/lib/
 build/
 
@@ -8,3 +7,7 @@ build/
 www/css/prettify.css
 
 
+/target
+.classpath
+.settings
+.project

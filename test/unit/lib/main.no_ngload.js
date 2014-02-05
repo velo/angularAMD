@@ -6,10 +6,10 @@ require.config({
     
     // alias libraries paths
     paths: {
-        'angular': 'bower_components/angular/angular',
-        'angular-mocks': 'bower_components/angular-mocks/angular-mocks',
-        'angularAMD': 'src/angularAMD',
-        'ngload': 'src/ngload',
+        'angular': 'dependencies/angular/angular',
+        'angular-mocks': 'dependencies/angular-mocks/angular-mocks',
+        'angularAMD': 'dependencies/angularAMD/angularAMD',
+        'ngload': 'dependencies/angularAMD/ngload',
         'app_no_ngload': 'test/unit/lib/app_no_ngload'
     },
 
